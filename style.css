@@ -187,7 +187,10 @@ div block{
     height: 350px;
     width: 100%;
     font-family: 'Dosis', sans-serif;
+}
 
+.rev__1{
+   padding-top: -90px;
 }
 
 .rev__text{
@@ -423,6 +426,7 @@ button:focus {
 /* Адаптив: START */
 
 @media screen and (max-width: 768px) {
+/*
     header {
         height: 70px;
         width: 100%; 
@@ -461,6 +465,7 @@ button:focus {
         height: 40px;
     }
     
+*/
     .picture{
         height: 300px;
         display: flex;
@@ -524,12 +529,8 @@ button:focus {
         margin-left: 40px;
     }
     
-    .rev__1{
-        margin-top: -50px;
-    }
-    
     .title{
-        width: 315px;
+        width: 355px;
     }
 }
 
@@ -554,7 +555,7 @@ button:focus {
 
 }
 
-@media screen and (max-width: 335px){
+@media screen and (min-width: 335px){
         
     .picture{
         padding: 0px;
@@ -570,7 +571,7 @@ button:focus {
     }
     
      .title{
-        width: 195px;
+        width: 304px;
     }
     
    
