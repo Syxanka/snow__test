@@ -564,13 +564,12 @@ button:focus {
     } 
     
    .rev__text{
-       font-size: 20px;
-       margin: 15px;
+       font-size: 15px;
     }
     
      
     .title{
-        width: 355px;
+        width: 290px;
     }
 
 }
@@ -591,11 +590,15 @@ button:focus {
     }
     
      .title{
-        width: 304px;
+        width: 5px;
     }
     
    blockquote
     {
+        display: none;
+    }
+    
+    .rev__1{
         display: none;
     }
     
