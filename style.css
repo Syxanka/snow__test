@@ -71,6 +71,7 @@ li{
     margin-left: 20px;
 
 }
+*/
 
 a{
     text-transform: uppercase; 
@@ -80,10 +81,9 @@ a{
 }
 
 a:hover{
-    color: whitesmoke;
+    color: black;
 
 }
-*/
 
 
 /*
