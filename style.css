@@ -72,6 +72,7 @@ li{
 
 }
 */
+/*
 
 a{
     text-transform: uppercase; 
@@ -83,6 +84,7 @@ a{
 a:hover{
     color: black;
 }
+*/
 
 
 /*
@@ -416,6 +418,11 @@ button:focus {
 
 .footer__icon i{
     margin: 5px;
+    color: gray;
+}
+
+.footer__icon i:hover{
+    color: black;
 }
 
 .footer__teams{
@@ -428,6 +435,15 @@ button:focus {
 .footer__teams a{
     text-transform: none;
 }
+
+.footer__a{
+    color: gray;
+}
+
+.footer__a:hover{
+    color: black;
+}
+
 
 
 
