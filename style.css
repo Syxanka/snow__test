@@ -9,6 +9,7 @@ body {
 
 }
 
+/*
 header {
     position: fixed;
     top: 0;
@@ -20,7 +21,9 @@ header.sticky {
     z-index:1;
     width: 100%;
 }
+*/
 
+/*
 a.sticky{
     color: dimgray;
 }
@@ -32,7 +35,9 @@ a.sticky:hover{
 .img.sticky{
     display: block;
 }
+*/
 
+/*
 .container {
     width: 100%;
     margin-left: auto;
@@ -55,7 +60,9 @@ a.sticky:hover{
     font-family: 'Dosis', sans-serif;
 
 }
+*/
 
+/*
 li{
     display: inline-block;
     padding-left: 20px;
@@ -76,11 +83,15 @@ a:hover{
     color: whitesmoke;
 
 }
+*/
 
 
+/*
 #touch-menu {
     display: none;
 }
+*/
+/*
 
 nav {
     margin-top: 0;
@@ -114,6 +125,7 @@ nav {
     text-transform: lowercase;
     font-size: 1.2em;
 }
+*/
 
 div block{
     width: 100%;   
@@ -163,8 +175,7 @@ div block{
 
 .projects{
     text-align: center;
-    width: 90%;
-    margin: 80px;
+    margin: 70px;
     font-family: 'Dosis', sans-serif;
 
 }
@@ -175,8 +186,9 @@ div block{
 }
 
 .projects__item{
+    font-weight: lighter;
+    line-height: 28px;
     color: dimgray;
-    font-size: 20px;
 }
 
 .rev{
@@ -184,16 +196,15 @@ div block{
     background-image: url(img/bg-pattern.jpg);
     background-repeat: no-repeat;
     color: white;
-    height: 350px;
     width: 100%;
     font-family: 'Dosis', sans-serif;
 }
 
 .rev__1{
+    margin-top: -50px;
 }
-
 .rev__text{
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .rev__item{
@@ -279,7 +290,6 @@ blockquote{
     left: 15px;
 
 }
-
 
 .box{
     text-align: center;
@@ -493,12 +503,7 @@ button:focus {
         padding: 20px;
         margin: 20px;
     }
-    
-     
-    blockquote{
-         margin: 35px;
-    }
-    
+      
     .contact__item{
         display: block;
         margin-left: -20px;
@@ -524,22 +529,23 @@ button:focus {
         margin-left: 20px;
     }
     
-    .projects{
-        margin-left: 40px;
-    }
-    
     .title{
         width: 355px;
     }
+    
+     .rev__1{
+    margin-top: -100px;
+}
+  
 }
 
 @media screen and (max-width: 495px){
     .rev{
-        height: 250px;
+        height: 270px;
     }
     
     .rev__1{
-        margin-top: 0px;
+        margin-top: -100px;
     } 
     
    .rev__text{
@@ -554,7 +560,7 @@ button:focus {
 
 }
 
-@media screen and (min-width: 335px){
+@media screen and (max-width: 335px){
         
     .picture{
         padding: 0px;
@@ -573,15 +579,16 @@ button:focus {
         width: 304px;
     }
     
-   
-    .rev{
-        height: 300px;
+   blockquote
+    {
+        display: none;
     }
     
     .projects{
         margin-left: 15px;
+        margin: 30px;
     }
-
+    
 }
 
 /* Адаптив: END */
