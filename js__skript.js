@@ -21,9 +21,15 @@ $(document).ready(function(){
       $('.rev').slick({
           dots: true,
           adaptiveHeight: true,
-          
       });
     });
 
-
-
+$(document).ready(function(){
+      $('.img__slider').slick({
+          slidesToShow: 5,
+          slidesToScroll: 7,
+          adaptiveHeight: true,
+          autoplay: true,
+          autoplaySpeed: 2500,
+      });
+    });
