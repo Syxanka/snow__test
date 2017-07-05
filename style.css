@@ -296,6 +296,20 @@ blockquote{
 
 }
 
+.img__slider{
+    position:absolute;
+    width: 100%;
+    padding-left: 10px;    
+}
+
+.img__slider-item{
+    width: 100%;
+    position: relative;
+    margin: 20px;
+    bottom: 15px;
+    
+}
+
 .box{
     text-align: center;
     display: block;
@@ -605,8 +619,11 @@ button:focus {
         display: block;
     }
       
-}
-
+    .img__slider{
+        display: flex;
+    }
+    
+    
 @media screen and (max-width: 783px){
     
     .black__one{
@@ -646,9 +663,6 @@ button:focus {
         display: block;
     }
 
-    .art__box{
-/*        margin-left: 80px;  */
-    }
 }
 
 @media screen and (max-width: 335px){
@@ -683,6 +697,7 @@ button:focus {
         margin-left: 15px;
         margin: 30px;
     } 
+    
 }
 
 /* Адаптив: END */
