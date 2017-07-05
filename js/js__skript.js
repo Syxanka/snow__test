@@ -23,12 +23,18 @@ $(document).ready(function(){
           adaptiveHeight: true,
           
       });
-//    $('.art').slick({
-//          dots: true,
-//          adaptiveHeight: true,
-//          
-//      });
-//      });
+    });
+
+//подкючение карусели блок .img
+$(document).ready(function(){
+    $('.img__pic').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        variableWidth: true,
+        adaptiveHeight: true,
+    });
+});
 
 
 
