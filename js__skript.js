@@ -23,12 +23,7 @@ $(document).ready(function(){
           adaptiveHeight: true,
           
       });
-//    $('.art').slick({
-//          dots: true,
-//          adaptiveHeight: true,
-//          
-//      });
-//      });
+    });
 
 
 

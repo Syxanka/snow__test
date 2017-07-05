@@ -324,6 +324,7 @@ blockquote{
     font-family: 'Dosis', sans-serif;
     background-color: #f2f2f2;
     padding-bottom: 30px;
+
 }
 
 
@@ -617,9 +618,9 @@ button:focus {
     }
     
      .rev__1{
-    margin-top: -100px;
+        margin-top: -100px;
 }
-  
+
 }
 
 @media screen and (max-width: 495px){
@@ -640,7 +641,14 @@ button:focus {
     .title{
         width: 260px;
     }
+    
+    .art{
+        display: block;
+    }
 
+    .art__box{
+/*        margin-left: 80px;  */
+    }
 }
 
 @media screen and (max-width: 335px){
@@ -674,8 +682,7 @@ button:focus {
     .projects{
         margin-left: 15px;
         margin: 30px;
-    }
-    
+    } 
 }
 
 /* Адаптив: END */
