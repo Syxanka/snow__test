@@ -36,6 +36,8 @@ $(document).ready(function(){
       });
     });
 
+//анимация при наведение на блок animated
+
 function animate(elem){
     var effect = elem.data("effect");
     if(!effect || elem.hasClass(effect)) return false;
