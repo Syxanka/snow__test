@@ -212,20 +212,27 @@ div block{
 }
 
 .pic__one-item{
-    position: absolute;
-    display: none;
-    font-size: 20px;
-    color: black;
+    background-color: white;
+    opacity: 0.7;
+    position: relative;
+    bottom: 30px;
 }
 
-.pic__one:hover .pic__one-item{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    display: block;
-    background: white;
-    opacity: 0.8; 
+.pic__one a{
+    text-decoration: none;
 }
+
+.animated{
+    color: black;
+    position: relative;
+    bottom: 100px;
+    background-color: white;
+    opacity: 0.8;
+    position: relative; 
+}
+
+
+
 
 
 
