@@ -212,10 +212,7 @@ div block{
 }
 
 .pic__one-item{
-    background-color: white;
-    opacity: 0.7;
-    position: relative;
-    bottom: 30px;
+   
 }
 
 .pic__one a{
@@ -226,9 +223,9 @@ div block{
     color: black;
     position: relative;
     bottom: 100px;
-    background-color: white;
+     background-color: white;
     opacity: 0.8;
-    position: relative; 
+    
 }
 
 
