@@ -14,19 +14,15 @@ $(document).ready(function(){
 		            menu.removeAttr('style');
 		        }
 		    });
-		});
 
 //подключение карусели блок .rev  
-$(document).ready(function(){
       $('.rev').slick({
           dots: true,
           adaptiveHeight: true,
       });
-    });
 
 
 //подключение карусели блок .img__slider
-$(document).ready(function(){
       $('.img__slider').slick({
           slidesToShow: 5,
           slidesToScroll: 7,
@@ -34,7 +30,6 @@ $(document).ready(function(){
           autoplay: true,
           autoplaySpeed: 2500,
       });
-    });
 
 //анимация при наведение на блок animated
 
@@ -50,4 +45,7 @@ function animate(elem){
 $(".animated").mouseenter(function() {
     animate($(this));
 });
+
+		});
+
 
