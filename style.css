@@ -200,19 +200,19 @@ div block{
 
 .pic__img{
     position: relative;
-    margin: 10px;
     bottom: 40px;
+    width: 100%;
 }
 
 .pic__one{
     position: relative;
     top: 0;
     text-align: center;
+    margin: 20px;
 }
 
 .pic__one-item{
     position: absolute;
-    width: 100%;
     display: none;
     font-size: 20px;
     color: black;
@@ -221,7 +221,7 @@ div block{
 .pic__one:hover .pic__one-item{
     position: absolute;
     width: 100%;
-    top: 110px;
+    top: 0;
     display: block;
     background: white;
     opacity: 0.8; 
@@ -660,6 +660,11 @@ button:focus {
         display: flex;
     }
     
+    .pic{
+        padding-top: 50px;
+    }
+    
+
     
 @media screen and (max-width: 783px){
     
@@ -698,7 +703,25 @@ button:focus {
     
     .art{
         display: block;
+        padding: 35px;
     }
+    
+
+    .pic{
+        display: block;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .pic__img{
+        height: 200px;
+        width: 300px;
+    }
+    
+    .pic__one:hover .pic__one-item{
+        width: 300px;
+}
+  
 
 }
 
@@ -735,6 +758,15 @@ button:focus {
         margin: 30px;
     } 
     
+    .pic{
+        display: block;
+    }
+    
+    .pic__img{
+        height: 200px;
+        width: 300px;
+    }
+      
 }
 
 /* Адаптив: END */
