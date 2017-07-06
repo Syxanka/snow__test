@@ -192,6 +192,43 @@ div block{
     color: dimgray;
 }
 
+.pic{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.pic__img{
+    position: relative;
+    margin: 10px;
+    bottom: 40px;
+}
+
+.pic__one{
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+.pic__one-item{
+    position: absolute;
+    width: 100%;
+    display: none;
+    font-size: 20px;
+    color: black;
+}
+
+.pic__one:hover .pic__one-item{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    display: block;
+    background: white;
+    opacity: 0.8; 
+}
+
+
+
 .art{
     display: flex;
     justify-content: center;

@@ -24,6 +24,8 @@ $(document).ready(function(){
       });
     });
 
+
+//подключение карусели блок .img__slider
 $(document).ready(function(){
       $('.img__slider').slick({
           slidesToShow: 5,
@@ -33,3 +35,6 @@ $(document).ready(function(){
           autoplaySpeed: 2500,
       });
     });
+
+
+
