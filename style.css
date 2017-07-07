@@ -9,124 +9,17 @@ body {
 
 }
 
-/*
-header {
-    position: fixed;
-    top: 0;
+
+.main__img{
+    position: relative;
+    top:0;
+    background-image: url(img/main.jpg);
+    background-size: 1200px;
     width: 100%;
-    }
-
-header.sticky {
-    background: white;
-    z-index:1;
-    width: 100%;
-}
-*/
-
-/*
-a.sticky{
-    color: dimgray;
-}
-
-a.sticky:hover{
-    color: black;
-}
-
-.img.sticky{
-    display: block;
-}
-*/
-
-/*
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    padding: 33px 0;
-    }
-
-.logo {
-    display: block;
-}
-
-.img{
-    display: none;
-}
-
-.menu{    
-    text-align: right;
-    font-family: 'Dosis', sans-serif;
-
-}
-*/
-
-/*
-li{
-    display: inline-block;
-    padding-left: 20px;
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 20px;
-
-}
-*/
-/*
-
-a{
-    text-transform: uppercase; 
-    color: #bfbfbd;
-    text-decoration: none;
-    
-}
-
-a:hover{
-    color: black;
-}
-*/
-
-
-/*
-#touch-menu {
-    display: none;
-}
-*/
-/*
-
-nav {
-    margin-top: 0;
-    text-align: center;
-    background-image: url(img/pic1.jpg);
+    height: 650px;
     background-repeat: no-repeat;
-    background-size: auto;
-}
-
-.picture{
-    padding: 200px;
-}
-
-.picture__item{
-    color: whitesmoke; 
     font-family: 'Dosis', sans-serif;
 }
-
-.text__item{
-    text-transform: uppercase;
-    font-size: 2.4em; 
-}
-
-.text__main{
-    display: block;
-    text-transform: uppercase;
-    font-size: 1.4em;
-}
-
-.text__time{
-    text-transform: lowercase;
-    font-size: 1.2em;
-}
-*/
 
 div block{
     width: 100%;   
@@ -136,7 +29,6 @@ div block{
      margin: 80px;
      text-align: center;
      font-family: 'Dosis', sans-serif;
-
 }
 
 .block__text{
@@ -176,7 +68,7 @@ div block{
 
 .projects{
     text-align: center;
-    margin: 70px;
+    padding: 50px;
     font-family: 'Dosis', sans-serif;
 
 }
@@ -192,50 +84,67 @@ div block{
     color: dimgray;
 }
 
-.pic{
+.hover{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
     font-family: 'Dosis', sans-serif;
 }
 
-.pic__img{
-    position: relative;
-    bottom: 40px;
-    width: 100%;
+.hover a{
+    margin: 20px; 
 }
 
-.pic__one{
-    position: relative;
-    top: 0;
-    text-align: center;
-    margin: 20px;
+.hover__block{
+  background:url(img/pic.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 300px;
+  height: 200px;
+  position: relative;
 }
 
-.pic__one-item{
-   
+.hover__block:hover .hover__overlay {
+  opacity: 1;
+  visibility: visible;
 }
 
-.pic__one a{
-    text-decoration: none;
+.hover__block:hover .hover__block-text {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(0.8);
 }
 
-.animated{
-    color: black;
-    position: relative;
-    bottom: 100px;
-     background-color: white;
-    opacity: 0.8;
-    
+.hover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s linear;
+  background-color: rgba(0, 0, 0, .5);
 }
 
+.hover__block-text {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s linear;
+  transform: scale(0,1);
+}
 
-
-
-
-
-.art{
-    display: flex;
-    justify-content: center;
+.hover__block-text p {
+  position: relative;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
 }
 
 .rev{
@@ -381,7 +290,6 @@ blockquote{
     padding-bottom: 30px;
 
 }
-
 
 .art__box{
     margin: 15px;
@@ -573,6 +481,21 @@ button:focus {
 
 /* Адаптив: START */
 
+@media screen and (max-width: 783px){
+    
+    .black__one{
+        margin-left: 20px;
+    }
+    
+    .title{
+        width: 355px;
+    }
+    
+     .rev__1{
+        margin-top: -100px;
+}
+}
+
 @media screen and (max-width: 768px) {
 /*
     header {
@@ -669,23 +592,6 @@ button:focus {
     }
     
 
-    
-@media screen and (max-width: 783px){
-    
-    .black__one{
-        margin-left: 20px;
-    }
-    
-    .title{
-        width: 355px;
-    }
-    
-     .rev__1{
-        margin-top: -100px;
-}
-
-}
-
 @media screen and (max-width: 495px){
     .rev{
         height: 310px;
@@ -707,10 +613,11 @@ button:focus {
     
     .art{
         display: block;
-        padding: 35px;
     }
     
-
+    .art__box-img{
+    }
+    
     .pic{
         display: block;
         padding: 20px;
@@ -725,10 +632,21 @@ button:focus {
     .pic__one:hover .pic__one-item{
         width: 300px;
 }
-  
+     
+    .hover{
+        display: block;
+    
+    }
+    
+    
+    .hover__block{
+        width: 400px;
+        height: 300px;
+    }
 
 }
 
+    
 @media screen and (max-width: 335px){
         
     .picture{
@@ -760,17 +678,7 @@ button:focus {
     .projects{
         margin-left: 15px;
         margin: 30px;
-    } 
-    
-    .pic{
-        display: block;
-    }
-    
-    .pic__img{
-        height: 200px;
-        width: 300px;
-    }
-      
+    }       
 }
 
 /* Адаптив: END */
