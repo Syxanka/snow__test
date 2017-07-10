@@ -1,7 +1,7 @@
 //подключение плагина шапки меню
 
 $(document).ready(function(){
-			var touch = $('#touch-menu'); 
+			var touch = $('.menu'); 
 		    var menu = $('.menu');
 		 
 		    $(touch).on('click', function(e) {
@@ -31,7 +31,13 @@ $(document).ready(function(){
           autoplaySpeed: 2500,
       });
     
-});
-
+//плавный скрол якоря
+    $("a.main__a").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 900 );
+      return false;
+    });
+  });
 
 
