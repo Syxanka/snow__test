@@ -12,7 +12,7 @@ body {
 .menu{
     display: flex;
     justify-content: space-around;
-    position: fixed;
+/*    position: fixed;*/
     top: 20px;
     z-index: 1;
     width: 100%;
@@ -161,8 +161,8 @@ div block{
   background:url(img/pic.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
   position: relative;
 }
 
@@ -341,7 +341,7 @@ blockquote{
 
 .art{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
     background-color: #f2f2f2;
     padding-bottom: 30px;
@@ -350,18 +350,14 @@ blockquote{
 .art__box{
     margin: 25px;
     background-color: white;
-}
-
-.art__box-img{
-    position: relative;
+    width: 350px;
 }
 
 .img{
     background: url(img/art.jpg);
     background-repeat: no-repeat;
     background-size: auto 100%;
-    height: 290px;
-    width: 900px;
+    height: 350px;
     width: 100%;
 }
 
@@ -392,6 +388,9 @@ blockquote{
     margin: 10px;
 }
 
+.art__box-img {
+    position: relative;
+}
 .art__box-title{
     font-weight: bolder;
     font-size: 25px;
@@ -545,6 +544,7 @@ button:focus {
      .rev__1{
         margin-top: -100px;
 }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -577,7 +577,11 @@ button:focus {
         padding: 20px;
         margin: 20px;
     }
-      
+    
+    .hover{
+        display: block;
+    }
+          
     .contact__item{
         display: block;
         margin-left: -20px;
@@ -586,11 +590,7 @@ button:focus {
     .contact__form{
         margin-left: -10px;
     }
-    
-    .title{
-        width: 200px;
-    }
-    
+        
     .blog__menu{
         display: block;
     }
@@ -645,8 +645,8 @@ button:focus {
 }
      
     .hover{
-        display: block;
-    
+        display: block;  
+        text-align: center;
     }
     
     
@@ -656,6 +656,57 @@ button:focus {
     }
 
 }
+    
+@media screen and (max-width: 412px){
+    
+    .hover__block{
+        width: 100%;
+        }
+    
+    .img__slider{
+        padding-left: 0;
+    }
+    
+    
+    .title{
+        width: 270px;
+    }
+    }
+    
+    @media screen and (max-width: 375px){
+        .art{
+            width: auto 100%;
+        }
+        
+        .art__box{
+             position: relative;
+            right: 25px;
+            width: 350px;
+        }
+        
+        .title{
+            width: 230px;
+        }
+    }    
+    
+@media screen and (max-width: 360px){
+      
+    .art{
+        position: relative;
+        right: 30px;
+        width: 370px;
+    }
+    
+    .hover__block{
+        width: auto 100%;
+    }
+    
+    .title{
+        width: 220px;
+    }
+    
+    
+    }
 
     
 @media screen and (max-width: 335px){
@@ -690,8 +741,16 @@ button:focus {
         margin-left: 15px;
         margin: 30px;
     }  
-    
-   
-}
 
+    
+@media screen and (max-width: 320px){
+     
+    .art{
+        width: 330px;
+    }
+        .art__box{
+        width: 310px;
+    }  
+    
+}
 /* Адаптив: END */
