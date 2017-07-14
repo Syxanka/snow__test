@@ -12,17 +12,26 @@ body {
 .menu{
     display: flex;
     justify-content: space-around;
-/*    position: fixed;*/
+    position: fixed;
     top: 20px;
     z-index: 1;
     width: 100%;
 }
 
 .menu li{
+    position: relative;
+    top: 0;
     float: left;
     margin: 20px;
     list-style: none;
     text-transform: uppercase;
+}
+
+.menu__touch{
+    display: none;
+    list-style: none;
+    font-size: 70px;
+    text-decoration: none;
 }
 
 .menu li:hover{
@@ -106,6 +115,7 @@ div block{
     color: dimgray;
     font-size: 1em;
 }
+
 
 .black{
     display: flex;
@@ -530,6 +540,32 @@ button:focus {
 
 
 /* Адаптив: START */
+
+@media screen and (max-width:800px){
+    
+    
+    .menu ul{
+        display: none;
+        height: auto;
+        position: absolute;
+        z-index: 0;
+        top: 50px;
+        text-align: center;
+        background: white;
+        opacity: 0.9;
+        width: 100%;  
+    }
+    
+    .menu li{
+        float: none;
+    }
+    
+    .menu__touch{
+        display: block;
+        position: relative;
+        top: -35px;
+    }
+}
 
 @media screen and (max-width: 783px){
     

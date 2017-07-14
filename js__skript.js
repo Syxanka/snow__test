@@ -1,19 +1,10 @@
-//подключение плагина шапки меню
-
+//клик меню
 $(document).ready(function(){
-			var touch = $('.menu'); 
-		    var menu = $('.menu');
-		 
-		    $(touch).on('click', function(e) {
-		        e.preventDefault();
-		        menu.slideToggle();
-		    });
-		    $(window).resize(function(){
-		        var wid = $(window).width();
-		        if(wid > 760 && menu.is(':hidden')) {
-		            menu.removeAttr('style');
-		        }
-		    });
+    $('.menu__touch').click(function(){
+        $('.menu ul').slideToggle();
+    });
+  
+
 
 //подключение карусели блок .rev  
       $('.rev').slick({
@@ -38,7 +29,5 @@ $(document).ready(function(){
       $('html,body').animate( { scrollTop: destination }, 900 );
       return false;
     });
-  });
-
-
-
+    
+      });
