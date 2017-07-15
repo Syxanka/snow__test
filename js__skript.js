@@ -22,7 +22,7 @@ $(document).ready(function(){
           autoplaySpeed: 2500,
       });
     
-//плавный скрол якоря
+//плавный скрол якоря: стрелочка
     $("a.main__a").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
@@ -30,4 +30,13 @@ $(document).ready(function(){
       return false;
     });
     
+//плавный скрол якоря: about
+    $("ul li a").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 900 );
+      return false;
+    });
+    
       });
+
