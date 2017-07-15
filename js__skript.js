@@ -22,7 +22,7 @@ $(document).ready(function(){
           autoplaySpeed: 2500,
       });
     
-//плавный скрол якоря: стрелочка
+//плавный скролл якоря: стрелочка
     $("a.main__a").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
@@ -30,7 +30,7 @@ $(document).ready(function(){
       return false;
     });
     
-//плавный скрол якоря: about
+//плавный скролл якоря: about
     $("ul li a").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
@@ -38,6 +38,7 @@ $(document).ready(function(){
       return false;
     });
     
+//плавный скролл якоря: contact     
     $("ul li a").click(function () { 
       var elementClick = $(this).attr("href");
       var destination = $(elementClick).offset().top;
