@@ -3,12 +3,15 @@
     padding: 0;
 }
 
+/*стили для всей страницы*/
+
 body {
    margin:0;
    padding: 0;
    font-family: 'Dosis', sans-serif;
 }
 
+/*стили для меню*/
 .menu{
     display: flex;
     justify-content: space-around;
@@ -48,7 +51,9 @@ body {
     height: 35px;
     width: 90px;
 }
+/**/
 
+/*стили для главное картинки для меню*/
 .main__img{
     position: relative;
     top: 0;
@@ -96,7 +101,9 @@ body {
     opacity: 0.5;
     transition: 1s;
 }
+/**/
 
+/*стили для блока описания "агенства"*/
 div block{
     width: 100%;   
 }
@@ -115,8 +122,9 @@ div block{
     color: dimgray;
     font-size: 1em;
 }
+/**/
 
-
+/*стили для чёрного блока с описанием кол-ва работ*/
 .black{
     display: flex;
     justify-content: space-around;
@@ -140,7 +148,9 @@ div block{
     font-size: 1em;
     text-transform: uppercase;
 }
+/**/
 
+/*стили для описания проектов*/
 .projects{
     text-align: center;
     margin: 30px;
@@ -157,7 +167,9 @@ div block{
     color: dimgray;
     font-size: 1em;
 }
+/**/
 
+/*стили для трёх блоков с проектами (лиса)*/
 .hover{
     display: flex;
     justify-content: center;
@@ -219,7 +231,9 @@ div block{
   color: #fff;
   text-align: center;
 }
+/**/
 
+/*стили для слайдера с текстом*/
 .rev{
     text-align: center;
     background-image: url(img/bg-pattern.jpg);
@@ -233,90 +247,15 @@ div block{
 .rev__text{
     font-size: 30px;
 }
-
 .rev__item{
     text-transform: uppercase;
 }
-
 blockquote{
     margin: 130px;
 }
+/**/
 
-.blog{
-    width: 100%;
-    background-color: #fafafa;
-    text-align: center;
-    overflow: hidden;
-}
-
-.blog__text{
-    font-size: 40px;
-    font-weight: 900;
-}
-
-.blog__p{
-    line-height: 28px;
-    color: dimgray;
-}
-
-.blog__img{
-    max-width: 400px;
-    width: 100%;
-    opacity: 0.85;
-}
-
-.blog__img:hover{
-    opacity: 1;
-    transition: 1s;
-}
-
-.blog__blog{
-    display: inline-flex;
-}
-
-.blog__blog{
-    display: block;
-    margin: 10px;
-    background-color: white;
-    width: 100%;
-}
-
-.blog__p-text{
-    text-align: left;
-    background-color: #252525;
-    color: white;
-    padding: 5px 25px;
-    opacity: 1;
-    bottom: 65px;
-    max-width: 50px;
-    left: 15px;
-    position: relative;
-    text-align: center;
-}
-
-.blog__p-text:hover{
-    opacity: 0.6;
-    transition: 1s;
-}
-
-.blog__1{
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    bottom: 50px;
-    position: relative;
-    left: 15px;
-
-}
-
-.blog__2{
-    position: relative;
-    bottom: 50px;
-    text-align: left;
-    left: 15px;
-
-}
-
+/*стили для слайдера, где много фото*/
 .img__slider{
     position:absolute;
     width: 100%;
@@ -330,7 +269,9 @@ blockquote{
     bottom: 15px;
     
 }
+/**/
 
+/*стили для блока с текстом*/
 .box{
     text-align: center;
     display: block;
@@ -349,7 +290,9 @@ blockquote{
     line-height: 28px;
     color: dimgray; 
 }
+/**/
 
+/*стили для блока с тремя фото (дом) и описаниями*/
 .art{
     display: flex;
     justify-content: space-around;
@@ -410,7 +353,9 @@ blockquote{
 .art__box-data{
     text-transform: uppercase;
 }
+/**/
 
+/*стили для контактной инфы*/
 .contact{
     background-color: #f6f6f6;
     width: 100%;
@@ -495,7 +440,9 @@ span{
 button:focus {
     outline: none;
 }
+/**/
 
+/*стили для футера*/
 .footer{
     background-color: #ebebeb;
     width: 100%;
@@ -537,7 +484,7 @@ button:focus {
 .footer__a:hover{
     color: black;
 }
-
+/**/
 
 
 /* Адаптив: START */
@@ -578,7 +525,7 @@ button:focus {
     
      .rev__1{
         margin-top: -100px;
-}
+    }
     
 }
 
@@ -680,7 +627,7 @@ button:focus {
     
     .pic__one:hover .pic__one-item{
         width: 300px;
-}
+    }
      
     .hover{
         display: block;  
@@ -709,23 +656,23 @@ button:focus {
     .title{
         width: 270px;
     }
-    }
+}
     
-    @media screen and (max-width: 375px){
-        .art{
-            width: auto 100%;
-        }
+@media screen and (max-width: 375px){
+    .art{
+         width: auto 100%;
+    }
         
-        .art__box{
-             position: relative;
-            right: 25px;
-            width: 350px;
-        }
+    .art__box{
+         position: relative;
+         right: 25px;
+         width: 350px;
+    }
         
-        .title{
-            width: 230px;
-        }
-    }    
+    .title{
+        width: 230px;
+    }
+}    
     
 @media screen and (max-width: 360px){
       
@@ -742,9 +689,7 @@ button:focus {
     .title{
         width: 220px;
     }
-
-    
-    }
+}
 
     
 @media screen and (max-width: 335px){
@@ -778,7 +723,8 @@ button:focus {
     .projects{
         margin-left: 15px;
         margin: 30px;
-    }  
+    } 
+}
 
     
 @media screen and (max-width: 320px){
@@ -786,58 +732,55 @@ button:focus {
     .art{
         width: 330px;
     }
-        .art__box{
+    
+    .art__box{
         width: 310px;
-
     }  
     
 }
     
-    @media screen and (max-width: 240px){
+@media screen and (max-width: 240px){
         
-        .main__img{
-            height: 500px;
-        }
-        
-        .main__info {
-            padding: 0px;
-            position: absolute;
-            top: 100px;
-        }
-        
-        .main__icon{
-            position: absolute;
-            top: 400px;
-            left: 100px;
-        }
-        
-        .main__img p, em{
-            font-size: 30px;
-        } 
-        
-        .hover__block{
-            height: 200px;
-        }
-        
-        .art{
-            width: 250px;
-        }
-        
-        .art__box{
-            width: 93%;
-            position: relative;
-        right: 1px;
-            
-        }
-        
-        .form, .title{
-            width: 90%;
-        }
-        
-        .rev__1{
-            padding-top: -50px;
-        }
-        
-        
+     .main__img{
+        height: 500px;
     }
+        
+    .main__info {
+        padding: 0px;
+        position: absolute;
+        top: 100px;
+    }
+        
+    .main__icon{
+        position: absolute;
+        top: 400px;
+        left: 100px;
+    }
+        
+    .main__img p, em{
+        font-size: 30px;
+    } 
+        
+    .hover__block{
+        height: 200px;
+    }
+        
+    .art{
+        width: 250px;
+    }
+        
+    .art__box{
+        width: 93%;
+        position: relative;
+        right: 1px;    
+    }
+        
+    .form, .title{
+        width: 90%;
+    }
+        
+    .rev__1{
+        padding-top: -50px;
+    }
+}
 /* Адаптив: END */
