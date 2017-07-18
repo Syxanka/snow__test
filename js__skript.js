@@ -3,8 +3,21 @@ $(document).ready(function(){
     $('.menu__touch').click(function(){
         $('.menu ul').slideToggle();
     });
-  
-
+    
+//клик подменю(portfolio.html)
+    $('.presintation__menu').click(function(){
+        $('.presintation ul').slideToggle();
+        
+    });
+    
+//скрытие подменю по клику за пределами его области    
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".presintation ul"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
 
 //подключение карусели блок .rev  
       $('.rev').slick({

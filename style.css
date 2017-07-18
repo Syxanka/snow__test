@@ -11,6 +11,7 @@ body {
    font-family: 'Dosis', sans-serif;
 }
 
+/*стили для index.html*/
 /*стили для меню*/
 .menu{
     display: flex;
@@ -448,6 +449,7 @@ button:focus {
     width: 100%;
     height: 150px;
     margin: 0;
+    position: relative;
 }
 
 .footer__icon{
@@ -485,11 +487,55 @@ button:focus {
     color: black;
 }
 /**/
+/**/
+
+
+/*стили для страницы portfolio.html*/
+/*стили для блока с подменю*/
+.presintation{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    background: rgba(212, 212, 212, 0.17);
+}
+
+.presintation i{
+    padding: 20px;
+}
+
+.presintation i:hover{
+    color: gray;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.presintation ul{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    list-style: none;
+    display: none;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.presintation li{
+    display: inline-block;
+}
+
+.presintation a{
+    color: gray;
+    text-decoration: none;
+    margin: 20px;   
+}
+
+.presintation a:hover{
+    color: black;
+}
 
 
 /* Адаптив: START */
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px)
+{
 
     .menu ul{
         display: none;
@@ -585,8 +631,8 @@ button:focus {
     .pic{
         padding-top: 50px;
     }
+}
     
-
 @media screen and (max-width: 495px){
     
     .rev{
@@ -690,8 +736,7 @@ button:focus {
         width: 220px;
     }
 }
-
-    
+ 
 @media screen and (max-width: 335px){
         
     .picture{
@@ -726,7 +771,6 @@ button:focus {
     } 
 }
 
-    
 @media screen and (max-width: 320px){
      
     .art{
