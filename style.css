@@ -175,6 +175,8 @@ div block{
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+
 }
 
 .hover a{
@@ -497,7 +499,9 @@ button:focus {
     position: relative;
     top: 100px;
     background: rgba(212, 212, 212, 0.17);
-    padding-bottom: 50px;
+    padding-bottom: 150px;
+    height: auto;
+
 }
 
 .presintation i{
@@ -537,6 +541,8 @@ button:focus {
 .picture{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .picture a{
@@ -595,6 +601,26 @@ button:focus {
 }
 /**/
 
+/*стили для текста с загрузкой*/
+.more{
+    position:relative;
+    text-align: center;
+    top: auto;
+    background: white;
+}
+
+.more a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.1em;
+}
+
+.more a:hover{
+    color: grey;
+    transition: 1s;
+}
+/**/
 
 /* Адаптив: START */
 
