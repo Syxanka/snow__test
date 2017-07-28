@@ -539,10 +539,10 @@ button:focus {
 
 /*стили для блока с презентациями*/
 .picture{
-    display: flex;
+    display: flex ;
     justify-content: center;
     flex-wrap: wrap;
-
+    overflow: hidden;
 }
 
 .picture a{
@@ -607,6 +607,7 @@ button:focus {
     text-align: center;
     top: auto;
     background: white;
+    padding: 30px;
 }
 
 .more a{
@@ -624,8 +625,7 @@ button:focus {
 
 /* Адаптив: START */
 
-@media screen and (max-width:800px)
-{
+@media screen and (max-width:800px){
 
     .menu ul{
         display: none;
